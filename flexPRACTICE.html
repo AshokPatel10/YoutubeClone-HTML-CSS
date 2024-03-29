@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example1{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+        .first{
+            background-color: aqua;
+            width: 200px;
+        }
+        .second{
+            background-color: blueviolet;
+            width: 75px;
+        }
+        .example2{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+        .item1{
+            background-color: aqua;
+            width: 50px;
+        }
+        .item2{
+            background-color: blueviolet;
+            flex: 1;
+        }
+        .item3{
+            background-color: aqua;
+            width: 75px;
+        }
+        .example3{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            height: 50px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            
+            
+        }
+        .item12{
+            background-color: aqua;
+            width: 75px;
+        }
+        .item22{
+            background-color: blueviolet;
+            width: 75px;
+        }
+        .item32{
+            background-color: aqua;
+            width: 75px;
+        }
+        .item42{
+            background-color: blueviolet;
+            width: 75px;
+        }
+        .example31{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            height: 50px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            align-items: center;
+            
+            
+        }
+        .item121{
+            background-color: aqua;
+            width: 75px;
+        }
+        .item221{
+            background-color: blueviolet;
+            width: 75px;
+        }
+        .item321{
+            background-color: aqua;
+            width: 75px;
+        }
+        .item421{
+            background-color: blueviolet;
+            width: 75px;
+        }
+        .nested-flexbox{
+            display: flex;
+            flex-direction: row;
+            border: none;
+            height: 50px;
+        }
+        .lightpink{
+            background-color: lightpink;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            
+        }
+        .item11{
+            background-color: lightgreen;
+            margin-left: 25px;
+        }
+        .lightskyblue{
+            background-color: lightskyblue;
+            width: 200px;
+            
+        }
+        .nested-flexbox1{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            border: none;
+            height: 50px;
+        }
+        .lightpink1{
+            background-color: lightpink;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            
+        }
+        .lightskyblue1{
+            background-color: lightskyblue;
+            width: 200px;
+        }
+        .nested-flexbox12{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .row2{
+            background-color: black;
+            color: white;
+        }
+        .row3{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        flex examples ::
+    </p>
+    <div class="example1">
+    <div class="first">
+        200px
+    </div>
+    <div class="second">
+        75px
+    </div>
+    </div>
+
+    <div class="example2">
+        <div class="item1">
+            item1
+        </div>
+        <div class="item2">
+            item2
+        </div>
+        <div class="item3">
+            item3
+        </div>
+    </div>
+    <div class="example3">
+        <div class="item12">
+            item1
+        </div>
+        <div class="item22">
+            item2
+        </div>
+        <div class="item32">
+            item3
+        </div>
+        <div class="item42">
+            item4
+        </div>
+    </div>
+
+    <div class="example31">
+        <div class="item121">
+            item1
+        </div>
+        <div class="item221">
+            item2
+        </div>
+        <div class="item321">
+            item3
+        </div>
+        <div class="item421">
+            item4
+        </div>
+    </div>
+
+    <p>
+       nested-flexbox example :: 
+    </p>
+    <div class="nested-flexbox">
+        
+        <div class="lightpink">
+
+            <div class="item11">
+                item11
+            </div>
+        </div>
+        <div class="lightskyblue">
+
+        </div>
+    </div>
+
+    <p>
+        flexbox inside flexbox examples ::
+    </p>
+    <div class="nested-flexbox1">
+        
+        <div class="lightpink1">
+
+        </div>
+        <div class="lightskyblue1">
+            <div class="row1">
+                row1
+            </div>
+            <div class="nested-flexbox12">
+                <div class="row2">
+                    row2
+                </div>
+                <div class="row3">
+                    row3
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
